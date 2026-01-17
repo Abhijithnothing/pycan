@@ -1,15 +1,10 @@
-import pytest
-def emp(name,empid,department,salary):
-    result=(
-        f"employee name:{name}"
-        f"employee id:{empid}" 
-        f"department:{department}"
-        f"salary:{salary}"
+def emp(name, empid, department, salary):
+    return (
+        f"employee name:{name}\n"
+        f"employee id:{empid}\n"
+        f"department:{department}\n"
+        f"salary:{salary}\n"
     )
-    return result
-if __name__ =="__main__":
-    name="Alice"
-    empid="FE041"
-    department="Engineering"
-    salary=500000
-    print(emp(name,empid,department,salary))
+
+if __name__ == "__main__":
+    print(emp("Alice", "FE041", "Engineering", 500000))
